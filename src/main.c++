@@ -1,4 +1,6 @@
 #include<SDL2/SDL.h>
+#include <SDL2/SDL2_gfxPrimitives.h>
+
 #include<iostream>
 
 int height=600;
@@ -17,11 +19,14 @@ int main(int argc,char* argv[]){
         return 1;
     }
     window=SDL_CreateWindow("Particle",SDL_WINDOWPOS_UNDEFINED,SDL_WINDOWPOS_UNDEFINED,width,height,SDL_WINDOW_SHOWN);
-    renderer=SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED);
+
     if(window==nullptr){
         std::cout<<"Window could not be created! SDL_Error: "<<SDL_GetError()<<std::endl;
         return 1;
     }
+
+    renderer=SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED);
+    
     if (renderer == nullptr) {
         std::cout << "Renderer could not be created! SDL_Error: " << SDL_GetError() << std::endl;
         SDL_DestroyWindow(window);
@@ -38,9 +43,10 @@ int main(int argc,char* argv[]){
             }
         }
         SDL_SetRenderDrawColor(renderer,252,255,255,255);
-           // Clear the screen with the draw color
+          
         SDL_RenderClear(renderer); 
-        // Update the screen
+        filledCircleRGBA(renderer, 200, 150, 50, 255, 0, 0, 255);
+
         SDL_RenderPresent(renderer); 
     }
      
