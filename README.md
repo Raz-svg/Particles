@@ -19,8 +19,8 @@ This experiment generates random bubbles that gradually fill the screen. As more
 
 1.  **Clone this repository:**
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/Raz-svg/Particles.git
+    cd Particles
     ```
 
 2.  **Install the required dependencies:**
