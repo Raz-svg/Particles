@@ -29,11 +29,11 @@ This experiment generates random bubbles that gradually fill the screen. As more
     * **On Linux (Debian/Ubuntu):**
         ```bash
         sudo apt-get update
-        sudo apt-get install libsdl3-dev
+        sudo apt-get install libsdl2-dev
         ```
     * **On macOS (using Homebrew):**
         ```bash
-        brew install sdl3
+        brew install sdl2
         ```
     * **On Windows:**
         Follow the instructions on the SDL website for setting up SDL3 with your development environment (e.g., Visual Studio, MinGW). You'll typically need to download the development libraries and configure your project's include and library paths.
