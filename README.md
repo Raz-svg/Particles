@@ -24,7 +24,7 @@ This experiment generates random bubbles that gradually fill the screen. As more
     ```
 
 2.  **Install the required dependencies:**
-    Make sure you have SDL3 installed on your system. You can download it from [SDL3's official site](https://www.libsdl.org/).
+    Make sure you have SDL2 installed on your system. You can download it from [SDL2's official site](https://www.libsdl.org/).
 
     * **On Linux (Debian/Ubuntu):**
         ```bash
